@@ -1,0 +1,26 @@
+name:                html2specular
+version:             0.1.0.0
+description:         Convert HTML to purescript-specular code
+homepage:            https://github.com/zyla/html2specular
+license:             BSD3
+author:              Maciej Bielecki
+maintainer:          maciej.bielecki@prati.pl
+copyright:           2018 Maciej Bielecki
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - text
+  - bytestring
+  - tagsoup
+  - mtl
+
+  # for hacky string escaping
+  - aeson
+
+executables:
+  html2specular:
+    source-dirs:      src
+    main:             Main.hs
